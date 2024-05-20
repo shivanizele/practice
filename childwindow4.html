@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Parent</title>
+    <style>
+        div {
+            float: left;
+            cursor: pointer;
+        }
+    </style>
+    <script type="text/javascript">
+        var SubpopUpWin = "";
+        var testUrl = "";
+
+        function Opennew(passedURL) {
+            testUrl = passedURL;
+            SubpopUpWin = window.open("childwindow4ref.html", '_blank', 'toolbar=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=yes');
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div onclick="Opennew('https://msbte.org.in/')">
+        <b>MSBTE</b>
+    </div>
+    <br/>
+    <div onclick="Opennew('https://gppune.ac.in/userindex.php')">
+        <b>Government Polytechnic Pune</b>
+    </div>
+    </br>
+    <div onclick="Opennew('http://www.bing.com')">
+        <b> Bing</b>
+    </div>
+</body>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Elements Before Push Meyhod : </p>
+    <p id="demo"></p>
+    <p>Elements Afetr push method : </p>
+    <p id="demo1"></p>
+    <p>Elements Afetr shift method : </p>
+    <p id="demo2"></p>
+    <script>
+        var Name = ["Siddhi", "Naina", "Anita", "Mona"];
+        document.getElementById("demo").innerHTML = Name;
+        Name.push("Swarupa");
+        document.getElementById("demo1").innerHTML = Name;
+        Name.shift();
+        document.getElementById("demo2").innerHTML = Name;
+    </script>
+</body>
+
+</html>

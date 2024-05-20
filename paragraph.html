@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title> paragraph plus table </title>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <script language="javascript">
+        document.write("<p>It is correctly said that “when you plant a tree, you plant a life”. Trees are one of the greatest blessings for humans from mother earth. The most important thing one must remember is that trees do not need us, rather we need them. Apart from the countless benefits they have, trees our certainly our best friends. They are the friends who always give us everything without expecting a single thing in return. Trees have inherited this earth longer than humans; however, humans tend to forget this fact. They fail to recognize their significance and continue to exploit them endlessly for short-term benefits </p>");
+    </script>
+    <h3>A demonstration of how to access a TABLE element</h3>
+
+    <!----->
+    <table id="myTable">
+        <tbody id="test"></tbody>
+    </table>
+
+
+
+    <script>
+        var data = [{
+            id: 1,
+            name: "VIJAY",
+            lastname: "SHILEKAR"
+        }, {
+            id: 2,
+            name: "SWARA",
+            lastname: "ZELE"
+        }, {
+            id: 3,
+            name: "SHIVANI",
+            lastname: "ZELE"
+        }, {
+            id: 3,
+            name: "SANDHYA",
+            lastname: "ZELE"
+        }, ]
+
+
+        var html = "";
+        for (var i = 0; i < data.length; i++) {
+            html += "<tr>" +
+                "<td>" + (i + 1) + "</td>" +
+                "<td>" + data[i].id + "</td>" +
+                "<td>" + data[i].name + "</td>" +
+                "<td>" + data[i].lastname + "</td>";
+        }
+        //$("#test").html(html);
+        document.getElementById('test').innerHTML = html
+    </script>
+
+</body>
+
+</html>
+</body>
+
+</html>

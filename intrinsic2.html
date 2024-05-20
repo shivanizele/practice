@@ -1,0 +1,51 @@
+<html>
+
+<head>
+
+    <title>Insert a string within a specific position in another string</title>
+
+</head>
+
+<body>
+
+    <script>
+        function insert(main_string, ins_string, pos) {
+
+            if (typeof(pos) == "undefined") {
+
+                pos = 0;
+
+            }
+
+            if (typeof(ins_string) == "undefined") {
+
+                ins_string = '';
+
+            }
+
+            return main_string.slice(0, pos) + ins_string +
+
+                main_string.slice(pos);
+
+        }
+
+        var main_string = "Welcome to JavaScript";
+
+        var ins_string = " the world of ";
+
+        var pos = 10;
+
+        var final_string = insert(main_string, ins_string, pos);
+
+        document.write("Main String: <b>" + main_string + "</b><br/>");
+
+        document.write("String to insert: <b>" + ins_string + "</b><br/>");
+
+        document.write("Position of string: <b>" + pos + "</b><br/>");
+
+        document.write("Final string: <b>" + final_string + "</b>");
+    </script>
+
+</body>
+
+</html>

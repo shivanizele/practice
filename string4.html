@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <h3>String after replace : </h3>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        var str = " Welcome to JavaScript";
+
+        var r = str.replace(/Welcome/, "Welcomefriend")
+
+        document.getElementById("demo").innerHTML = r;
+    </script>
+    <script>
+        var str3 = "     Welcome to JavaScript";
+        //var str2 = str3.toUpperCase(str3);
+        document.getElementById("demo1").innerHTML = str3.toUpperCase();
+        document.getElementById("demo2").innerHTML = str3.toLowerCase();
+        var ss = "    Welcome Friends  ";
+        alert(ss.trim());
+    </script>
+</body>
+
+</html>

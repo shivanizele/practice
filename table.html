@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>A demonstration of how to access a TABLE element</h3>
+
+    <!----->
+    <table id="myTable">
+        <tbody id="test"></tbody>
+    </table>
+
+
+
+    <script>
+        var data = [{
+                id: 1,
+                name: "VIJAY"
+            }, {
+                id: 2,
+                name: "IJYA"
+            }, {
+                id: 3,
+                name: "SHIVANI"
+            }, ]
+            //var tr = data.map((item)=>{
+            //return(
+            //<tr>
+            //<td></td>
+            //<td></td>
+            //</tr>
+            //)
+            //})
+
+        var html = "";
+        for (var i = 0; i < data.length; i++) {
+            html += "<tr>" +
+                "<td>" + (i + 1) + "</td>" +
+                "<td>" + data[i].id + "</td>" +
+                "<td>" + data[i].name + "</td>";
+        }
+        //$("#test").html(html);
+        document.getElementById('test').innerHTML = html
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!-- Develop a JavaScript program to create a slideshow with the group of four images, also simulate the next and previous transition between slides in your JavaScript.-->
+<html>
+
+<head>
+    <title>Image slideshow</title>
+    <script>
+        var images = ["js.jpg", "ds.jpg", "oop.jpg", "books.jpg"];
+        var count = 0;
+
+        function previousImage() {
+            if (count != 0)
+                count--;
+            var id = document.getElementById("iamgeID");
+            id.src = "images/" + images[count];
+        }
+
+        function nextImage() {
+            if (count != 3)
+                count++;
+            var id = document.getElementById("iamgeID");
+            id.src = "images/" + images[count];
+
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+
+        <img id="iamgeID" src="images/books.jpg" width="30%" height="75%" />
+
+        <br/>
+
+        <hr>
+
+        <input type="button" value=" Prev Image" onclick="previousImage()" />
+
+        <input type="button" value="Next Image" onclick="nextImage()" />
+    </center>
+
+</body>
+
+</html>

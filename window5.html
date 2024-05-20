@@ -1,0 +1,33 @@
+<html>
+
+<head>
+
+    <script>
+        function createWindows()
+
+        {
+
+            for (i = 0; i < 5; i++)
+
+            {
+
+                var mywin = window.open("", "win" + i, "width=200, height=200")
+                mywin.document.write("<h3>Hello World !!!!</h3>")
+            }
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <form>
+
+        <input type="button" value="Create Multiple Windows" onclick="createWindows()" />
+
+    </form>
+
+</body>
+
+</html>

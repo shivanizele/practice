@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Child</title>
+    <style>
+        div {
+            float: left;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div>
+        <div id="ifrm_title">
+        </div>
+        <div style="margin-top:20px">
+            <iframe id="ifrm" src="" width="470" height="270" frameborder="0" style="margin-top: 34px" scrolling="no">
+            </iframe>
+            <script type="text/javascript">
+                document.getElementById("ifrm").src = window.opener.testUrl;
+            </script>
+        </div>
+    </div>
+</body>

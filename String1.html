@@ -1,0 +1,24 @@
+<html>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo3"></p>
+    <script>
+        var fruitname = "Mangeo is \"Very best fruit and sweet \\ best fruit";
+        var fruitname2 = "Pineapple";
+        var fruitname3 = "Coconut"
+        var slength = fruitname.length;
+        document.getElementById("demo1").innerHTML = "The Length of fruitname : " + slength;
+        document.write("<hr>");
+        document.getElementById("demo").innerHTML = fruitname + " <br>" + fruitname2 + "<br>" + fruitname3;
+        var pos = fruitname.indexOf("Mangeo");
+    </script>
+    <script>
+        var student = "The Student Enrollment number is sixty nine";
+        var pos = student.indexOf("Enrollment");
+        document.write("The index is : " + pos);
+    </script>
+</body>
+
+</html>
